@@ -14,7 +14,8 @@ class ProductController extends Controller
      */
     public function index(Request $request)
     {
-        return Product::all();
+        $products = Product::all();
+        return view('products/index', array('products' => $products));
     }
 
     /**
@@ -46,7 +47,8 @@ class ProductController extends Controller
      */
     public function show($id)
     {
-        return Product::find($id);
+        $product = Product::find($id);
+        return view('products/show', array('product' => $product));
     }
 
     /**
@@ -81,5 +83,9 @@ class ProductController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function findOther($id) {
+
     }
 }
