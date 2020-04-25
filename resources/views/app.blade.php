@@ -42,8 +42,6 @@
 	<link rel="stylesheet" href="{{ url('style.css') }}">
     <link rel="stylesheet" href="{{ url('/responsive.css') }}">
 
-	
-	
 </head>
 <body class="js">
 	

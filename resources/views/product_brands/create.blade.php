@@ -2,7 +2,7 @@
 @section('title', @trans('brand.create_brand'))
 @section('content')
 <form method="post" action="{{ route('product_brands.store') }}">
-  {{ csrf_field() }}
+  @csrf
   <div class="form-group">
     <label for="exampleInputEmail1">{{ @trans('brand.label_name_brand') }}</label>
     <input type="text" class="form-control" id="name" name="name" aria-describedby="emailHelp" placeholder="Enter name brand">

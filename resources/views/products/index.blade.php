@@ -1,6 +1,6 @@
 @extends('app')
 @section('title', 'Product List')
-
+<h1>{{ trans('product.name') }}</h1>    
 @section('content')
     @foreach ($products as $product)
         <div class="col-xl-3 col-lg-4 col-md-4 col-12">
